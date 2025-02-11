@@ -1,6 +1,7 @@
 import 'dart:convert';
-import 'package:tourism_app/model/tourism_detail_response.dart';
-import 'package:tourism_app/model/tourism_list_response.dart';
+
+import 'package:tourism_app/data/model/tourism_detail_response.dart';
+import 'package:tourism_app/data/model/tourism_list_response.dart';
 import 'package:http/http.dart' as http;
 
 class ApiServices {

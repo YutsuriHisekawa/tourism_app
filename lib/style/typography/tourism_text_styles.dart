@@ -1,4 +1,3 @@
-// todo-02: add text style for all typography
 import 'package:flutter/widgets.dart';
 
 class TourismTextStyles {

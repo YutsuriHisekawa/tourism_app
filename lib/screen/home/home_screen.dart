@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tourism_app/provider/home/tourism_list_provider.dart';
 import 'package:tourism_app/screen/home/tourism_card_widget.dart';
-import 'package:tourism_app/screen/home/tourism_list_provider.dart';
 import 'package:tourism_app/static/navigation_route.dart';
 import 'package:tourism_app/static/tourism_list_result_state.dart';
 
@@ -13,11 +13,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // late Future<TourismListResponse> _futureTourismResponse;
   @override
   void initState() {
     super.initState();
-    // _futureTourismResponse = ApiServices().getTourismList();
+
     Future.microtask(() {
       context.read<TourismListProvider>().fetchTourismList();
     });

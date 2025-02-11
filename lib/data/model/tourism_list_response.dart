@@ -1,10 +1,17 @@
-import 'package:tourism_app/model/tourism.dart';
+import 'package:tourism_app/data/model/tourism.dart';
 
 class TourismListResponse {
   final bool error;
   final String message;
   final int count;
   final List<Tourism> places;
+
+  TourismListResponse({
+    required this.error,
+    required this.message,
+    required this.count,
+    required this.places,
+  });
 
   factory TourismListResponse.fromJson(Map<String, dynamic> json) {
     return TourismListResponse(
@@ -16,11 +23,4 @@ class TourismListResponse {
           : <Tourism>[],
     );
   }
-
-  TourismListResponse({
-    required this.error,
-    required this.message,
-    required this.count,
-    required this.places,
-  });
 }

@@ -1,4 +1,4 @@
-import 'package:tourism_app/model/tourism.dart';
+import 'package:tourism_app/data/model/tourism.dart';
 
 class TourismDetailResponse {
   final bool error;
@@ -18,6 +18,4 @@ class TourismDetailResponse {
       place: Tourism.fromJson(json["place"]),
     );
   }
-
-  get tourism => null;
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:tourism_app/model/api_service.dart';
+import 'package:tourism_app/data/api/api_services.dart';
+
 import 'package:tourism_app/static/tourism_list_result_state.dart';
 
 class TourismListProvider extends ChangeNotifier {

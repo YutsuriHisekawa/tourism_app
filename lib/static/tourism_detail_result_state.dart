@@ -1,4 +1,4 @@
-import 'package:tourism_app/model/tourism.dart';
+import 'package:tourism_app/data/model/tourism.dart';
 
 sealed class TourismDetailResultState {}
 

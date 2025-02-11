@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:tourism_app/model/api_service.dart';
+import 'package:flutter/widgets.dart';
+import 'package:tourism_app/data/api/api_services.dart';
 import 'package:tourism_app/static/tourism_detail_result_state.dart';
 
 class TourismDetailProvider extends ChangeNotifier {
